@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll_Events_Intersection</title>
+</head>
+
+<body>
+    <script src="./Scroll_Events_Intersection.js"></script>
+    <div class="wrapper">
+        <div class="terms-and-conditions">
+
+            <p>The HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of
+                text
+                separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be
+                any
+                structural grouping of related content, such as images or form fields.
+                <strong class="watch">watch for me</strong>
+                Paragraphs are block-level elements, and notably
+                will automatically close if another block-level element is
+                parsed before the closing
+                tag. he HTML element represents a paragraph. Paragraphs are usually represented in visual media as
+                blocks of
+                text
+                separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be
+                any
+                structural grouping of related content, such as images or form fields.he HTML element represents a
+                paragraph. Paragraphs are usually represented in visual media as blocks of
+                text
+                separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be
+                any
+                structural grouping of related content, such as images or form fields.he HTML element represents a
+                paragraph. Paragraphs are usually represented in visual media as blocks of
+                text
+                separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be
+                any
+                structural grouping of related content, such as images or form fields.he HTML element represents a
+                paragraph. Paragraphs are usually represented in visual media as blocks of
+                text
+                separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be
+                any
+                structural grouping of related content, such as images or form fields.See “Tag omission” below.
+            </p>
+
+        </div>
+        <button class="accept">Accept</button>
+
+    </div>
+    <style>
+        body {
+            min-height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 2;
+            background: #ffc600;
+        }
+
+        .wrapper {
+            width: 400px;
+            height: 80vh;
+            padding: 20px;
+            border: 1px solid black;
+            background: white;
+            display: grid;
+            grid-template-rows: 1fr auto;
+        }
+
+        .terms-and-conditions {
+            overflow: scroll;
+        }
+
+        button {
+            background: #ff0060;
+            color: white;
+            font-size: 1rem;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+
+        button[disabled] {
+            opacity: 0.1;
+            transform: translateX(-200%) scale(0.5);
+        }
+    </style>
+</body>
+
+</html>
